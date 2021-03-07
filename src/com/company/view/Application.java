@@ -19,7 +19,7 @@ public class Application {
 
 
     int bilet_num = 1000; // number of ticket
-    public Application(IFlightRepository flightRepository) { // contructor
+    public Application(IFlightRepository flightRepository) { // constructor
         flightController = new FlightController(flightRepository); // we recieve repository from main
 
         mon.add("New-York");
