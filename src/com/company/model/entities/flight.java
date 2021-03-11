@@ -1,18 +1,20 @@
 package com.company.model.entities;
 
+import java.sql.Date;
+
 public class flight {
 
     //private variables
     private int ticketNum;
     private String name;
     private String destination;
-    private String date;
+    private Date date;
     private String time;
     private int price;
 
     //contractors
 
-    public flight(int ticketNum, String name, String destination, String date, String time, int price) {
+    public flight(int ticketNum, String name, String destination, Date date, String time, int price) {
         this.ticketNum = ticketNum;
         this.name = name;
         this.destination = destination;
@@ -47,11 +49,11 @@ public class flight {
         this.destination = destination;
     }
 
-    public String getDate() {
+    public Date getDate() {
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
         this.date = date;
     }
 
